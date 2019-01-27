@@ -1,0 +1,525 @@
+*{
+     transition:all 1s;
+
+}
+.body{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #787878;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+
+}
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.home .navbar{
+    position: fixed;
+    background-color: rgba(0,0,0,.2);
+    color: #fff !important;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+    padding: 0rem ;
+}
+.collapse{
+    display: flex;
+    flex-flow: row-reverse;
+}
+.collapse .navbar-nav .nav-item a{
+    color: #fff;
+    padding: 2rem 1rem;
+}
+.home .navbar a:hover{
+    cursor: pointer;
+}
+.home .nav-item .b-right{
+    border-right: 1px solid rgba(255,255,255,.5);
+}
+.home .one{
+    background-image: url(../images/bg-image-28.jpg);
+    background-size: 100% 100%;
+    height: 100%;
+}
+.home .two{
+    background-image: url(../images/bg-image-29.jpg);
+    background-size: 100% 100%;
+    height: 100%;
+}
+.home .home-caption{
+    background-color: rgba(31, 31, 31, 0.55);
+    height: 100%;
+    color: #fff;
+    padding-top: 20%;
+    text-align: center;
+    transition: all 0.3s;
+}
+.home .home-caption h1{
+    font-weight: 700;
+    font-size: 100px;
+    opacity: 0;
+}
+.home .home-caption h4{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 30px;
+    opacity: 0;
+    transition-delay: 0.3s;
+}
+.home .home-caption a{
+    font-size: 14px;
+    font-weight: 600;
+     opacity: 0;
+    transition-delay: 0.6s;
+
+}
+.home .home-caption .btn-one{
+    
+    border: 1px solid #00c3da;
+    background-color: #00c3da;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.home .home-caption .btn-two{
+    border: 1px solid #fff;
+    background-color: transparent;
+    padding: 10px 25px;
+    border-radius: 5px;
+    
+}
+.home .carousel-item.active .home-caption h1{
+    opacity:1;
+}
+.home .carousel-item.active .home-caption h4{
+    opacity:1;
+}
+.home .carousel-item.active .home-caption a{
+    opacity:1;
+}
+
+/*change arrows position*/
+.home .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:0.5%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width:auto;
+    color: #fff;
+    opacity: .5;
+    
+}
+.home .carousel-control-next {
+    position: absolute;
+    top: 75;
+    bottom: 0;
+    right:98%;
+
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: auto;
+    color: #fff;
+    text-align: center;
+    opacity: .5;
+}
+.home .carousel-control-next-icon{
+    background-image: none;
+}
+.home .carousel-control-prev-icon{
+    background-image: none;
+}
+.home .carousel-control-next-icon:hover i{
+    background-color: #fff;
+    color: #888;
+}
+.home .carousel-control-prev-icon:hover i{
+    background-color: #fff;
+    color: #888;
+}
+/*--------------end home------------------*/
+.about{
+    font-weight: 300;
+}
+.about h4{
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+}
+.about p-head{
+    font-size: 24px;
+    margin: 20px 0;
+}
+.about .btn{
+    border: 1px solid #dedede;
+    background-color: #fff;
+}
+.about .btn:hover{
+    border: 2px solid #1f1f1f;
+    background-color: #1f1f1f !important;
+    color:#fff !important;
+    cursor: pointer;
+}
+.about .nav .nav-link{
+    color:#444;
+}
+.about .nav .active{
+    border-bottom: 1px solid #444;
+}
+.about .img-info{
+    line-height: 28px;
+    font-weight: 400;
+    color: #787878;
+}
+
+.team .team-title h2 ,.products .product-title h2,#p{
+    position: relative;
+    font-weight: 900;
+    font-size: 80px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+
+}
+.prices #p:after{
+    content:"Cheap Prices";
+    position: absolute;
+    top: 43%;
+    left:15%;
+    color:#1f1f1f;
+    font-weight: 600;
+    font-size: 40px;
+    width: 70%;
+    
+}
+.team .team-title h2:after{
+    content:"Creative Team";
+    position: absolute;
+    top: 40%;
+    left:15%;
+    color:#1f1f1f;
+    font-weight: 600;
+    font-size: 40px;
+    width: 70%;
+    
+}
+.team .team-title h4,.products .product-title h4,.prices .pricing-title h4{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color:rgb(120, 120, 120);
+}
+.team .team-profile,.prices .pricing-profiles{
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+
+}
+.team .team-profile .layout-team{
+    position: absolute;
+    background-color: rgba(0, 195, 218, 0.9);
+    height: 272.5px;
+    width: 97%;
+
+}
+.team .team-profile:hover .layout-team{
+    top:0px;
+}
+
+.team .team-profile .layout-team .icon-team{
+    position: relative;
+    top:10px;
+    left:10px;
+    color: #fff;
+}
+.team .team-profile .layout-team .team-title{
+    position: relative;
+    top:65%;
+    left:10px;
+    color: #fff;
+}
+.team .team-profile .layout-team .team-title h4{
+    text-align: left;
+    color:#fff;
+}
+.animations{
+    background-image: url(../images/bg-image-26.jpg);
+    background-size: 100% 100%;
+    
+}
+.animations .rgba{
+    background-color: rgba(0,0,0,0.5);
+}
+.animated-icon.white svg, .animated-icon.white svg *{
+    stroke: #fff;
+}
+.icon-box > .animated-icon {
+    width: 55px;
+    margin-bottom: 25px;
+}
+
+.animations .ani-member h4{
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    color: #fff;
+    text-transform: uppercase;
+}
+.animations .ani-data h2{
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.products .product-title h2:after{
+    content:"Our Works";
+    position: absolute;
+    top: 40%;
+    left:15%;
+    color:#1f1f1f;
+    font-weight: 600;
+    font-size: 40px;
+    width: 70%;
+    
+}
+.products .product-title h2:before{
+    content:"";
+    height: 1px;
+    background-color: #1f1f1f;
+    position: absolute;
+    top: 150%;
+    margin-left: 8px;
+    font-weight: 600;
+    font-size: 40px;
+    width: 4%;
+    transition: all 1s;
+}
+.products .product-title h2:hover:before{
+    content:"";
+    height: 1px;
+    background-color: #1f1f1f;
+    position: absolute;
+    top: 150%;
+    left: 45%;
+    font-weight: 600;
+    font-size: 40px;
+    width: 8%;
+    cursor: pointer;
+    
+}
+.products .product-member .nav-pills .nav-link {
+    color: #1f1f1f;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+    cursor: pointer;
+    text-align: center;  
+  
+}
+.products .product-member .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #00c3da;
+    border:1px solid #00c3da;
+    border-radius: 50px;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+    cursor: pointer;
+    text-align: center;
+
+}
+.products .product-member .member-container{
+    overflow: hidden;
+}
+.products .product-member .member{
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+
+}
+.products .product-member .member:hover img{
+    transform: scale(1.1,1.1);
+}
+.products .product-member .member .member-caption{
+    opacity: 0;
+    position: absolute;
+    top:70%;
+    left:10%;
+    transition:all 1s;
+    transition-delay: 0.5s;
+}
+
+.products .product-member .member:hover .member-caption{
+    opacity: 1;
+}
+
+.products .product-member .member .member-caption h3{
+    opacity: 0;
+    transition-delay: 1s;
+}
+.products .product-member .member .member-caption p{
+    opacity:0;
+    transition-delay: 1.5s;
+}
+
+.products .product-member .member:hover .member-caption h3{
+    opacity: 1;
+}
+.products .product-member .member:hover .member-caption p{
+    opacity:1;
+}
+@media (max-width:850px){
+        .products .product-member .nav-layout {
+    width: 100%;
+         
+}
+    .products .product-member .nav-layout .nav{
+        flex: auto;
+        justify-content: space-around;
+    }
+    .products .product-member .nav-pills .nav-item {
+    width: 30%;
+        
+}
+    .products .product-title h2:before{
+    content:"";
+    height: 1px;
+    background-color: #1f1f1f;
+    position: absolute;
+    top: 150%;
+    font-weight: 600;
+    font-size: 40px;
+    width: 8%;
+    transition: all 1s;
+}
+.products .product-title h2:hover:before{
+    content:"";
+    height: 1px;
+    background-color: #1f1f1f;
+    position: absolute;
+    top: 150%;
+    left: 40%;
+    font-weight: 600;
+    font-size: 40px;
+    width: 16%;
+    cursor: pointer;
+    
+}
+/*-----------testimonial---------*/
+
+.experiances{
+        background-color: #f1f1f1;
+    }
+
+
+/*change arrows position*/
+.experiances .container .carousel slide .carousel-control-prev{
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left:0.5%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width:auto;
+    color: #f1f1f1;
+    opacity: 1;
+    
+}
+.experiances .container .carousel slide .carousel-control-next{
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    right:0.5%;
+
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: auto;
+    color: #f1f1f1;
+    text-align: center;
+    opacity: 1;
+}
+.experiances .container .carousel slide .carousel-control-next-icon{
+    background-image: none;
+}
+.experiances .container .carousel slide .carousel-control-prev-icon{
+    background-image: none;
+}
+.experiances .container .carousel slide .carousel-control-next-icon:hover i{
+    background-color: #f1f1f1;
+    color: #333;
+}
+.experiances .container .carousel slide .carousel-control-prev-icon:hover i{
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+/*-----------------*/
+
+.experiances .container .carousel slide .carousel-indicators li.active{
+    position: relative;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #00c3da;
+    border-radius: 50%;
+}
+.experiances .container .carousel slide .carousel-indicators li{
+    position: relative;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #afafaf;
+    border-radius: 50%;
+}
+/*-------------------contact-----------*/
+    .contact a{
+        background-color: #00c3da;
+    }
+ .contact .form-title h2{
+    position: relative;
+    font-weight: 900;
+    font-size: 80px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.contact .form-title h2:after{
+    content:"Get In Touch";
+    position: absolute;
+    top: 45%;
+    left:5%;
+    color:#1f1f1f;
+    font-weight: 700;
+    font-size: 40px;
+    width:100%;
+}
+footer p{
+    background-color: rgba(0,0,0,.7);
+}
